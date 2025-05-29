@@ -1,5 +1,6 @@
 - name: installing Mongodb
   hosts: backend
+  become: yes
   tasks:
   - name: copying repo
     ansible.builtin.copy:
